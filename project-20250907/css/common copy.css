@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body {font-family: sans-serif;}
+
+
+/* header */
+header {width: 100%; height: 120px;}
+
+.container {width: 100%; height: 70x; background-color: #aaa; margin: 0 auto;}
+.header_top {width: 1200px; height: 90px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+
+.logo {width: 180px; height: 50px;}
+
+.search {width: 590px; height: 60px; display: flex; margin-top: 5px;}
+.search input{width: 470px; height: 52px; padding-left: 7px; border-radius: 10px 0 0 10px; color:rgba(0, 0, 0, 0.8); border: 1px solid rgba(0, 0, 0, 0.5);}
+.search button { width: 100px; height:52px; background-color: green; border: none; border-radius: 0 10px 10px 0; display: flex;
+align-items: center; justify-content: center; cursor: pointer;}
+.search button i {color: white;}
+
+.mypage {width: 158px; height: 37px; margin: 0 10px; font-weight:450;}
+.icon-cart {color: green; margin-top: 7px; font-size: x-large;}
+.icon-setting {margin-left: 10px; color: black;}
+.icon-setting:hover {transition: all 0.1s; color:green;}
+
+nav {width: 1200px; height: 62px; background-color: blue; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+nav ul {display: flex;}
+nav ul li {position: relative;}
+nav ul li a { display: block; padding: 15px 20px;text-decoration: none;
+color: black;} 
+
+
+
+
+/* footer */
+footer {width: 100%; height: 60px; background-color: antiquewhite;}
+.container2 {width: 1200px; height: 60px; background-color: #aaa; margin: 0 auto;}

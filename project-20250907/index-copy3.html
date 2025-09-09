@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shirley</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="logo">
+                    <img src="https://zhzhahd.github.io/book/img/logoshirley.png" alt="이미지">
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Search our store">
+                    <button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                </div>
+                <div class="mypage">
+                    <a href="#"><i class="fa-solid fa-bag-shopping icon-cart"></i></a>
+                    <a href="#">$0.00</a>
+                    <a href="#"><i class="fa-solid fa-gear icon-setting"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+           <!--  <ul class="nav-list">
+                    <li class="has-submenu">
+                    <li><a href="#">Home</a></li>
+                        <div class="submenu">
+                            <ul class="submenu-group">
+                                <li><a href="#">Home1</a></li>
+                                <li><a href="#">Home2</a></li>
+                                <li><a href="#">Home3</a></li>
+                                <li><a href="#">Home RTL</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">Books</a>
+                        <div class="submenu">
+                            <ul class="submenu-group">Children's Books
+                                <li><a href="#">Arts & Photography</a></li>
+                                <li><a href="#">Biographhies & Memoirs</a></li>
+                                <li><a href="#">Children's Books</a></li>
+                                <li><a href="#">Cookbook.Food & Wine</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Literature & Function</a></li>
+                            </ul>
+                            <ul class="submenu-group">Story Books
+                                <li><a href="#">Mystery & Suspense</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Wi-fy & Fantasy</a></li>
+                                <li><a href="#">Teen & Young Aduit</a></li>
+                                <li><a href="#">Black Fashion Zapdram</a></li>
+                                <li><a href="#">Coneco Product sample</a></li>
+                            </ul>
+                            <ul class="submenu-group">History Books
+                                <li><a href="#">Daltex Product Example</a></li>
+                                <li><a href="#">Donkix Prouct Sample</a></li>
+                                <li><a href="#">Finity Product Sample</a></li>
+                                <li><a href="#">Fixair Product Sample</a></li>
+                                <li><a href="#">Geous White Bag</a></li>
+                                <li><a href="#">Geous White Dresses</a></li>
+                            </ul>
+                            <ul class="submenu-group">Cooking Books
+                                <li><a href="#">Golddax Product Example</a></li>
+                                <li><a href="#">New Releases</a></li>
+                                <li><a href="#">Best Sellers</a></li>
+                                <li><a href="#">Our Favourites</a></li>
+                                <li><a href="#">Reference Guides</a></li>
+                                <li><a href="#">Faculty Authors</a></li>
+                            </ul>
+                    </div>
+                    </li>
+                        </li>
+                        <li><a href="#"></a>Magazines</li>
+                        <li><a href="#"></a>TextBooks</li>
+                        <li><a href="#"></a>Pecomended</li>
+                        <li><a href="#"></a>Sale</li>
+                        <li>
+                        <a href="#">Pages</a>
+                    <div class="subnav">
+                        <ul class="submenu-group">
+                            <li><a href="#">About as</a></li>
+                            <li><a href="#">Contact as</a></li>
+                            <li><a href="#">FAQ pages</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul> -->
+        </nav> 
+
+    <div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+1" alt="배너1"></div>
+    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+2" alt="배너2"></div>
+    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+3" alt="배너3"></div>
+  </div>
+  <button class="prev">◀</button>
+  <button class="next">▶</button>
+</div>
+
+
+    <footer>
+        <div class="container2">
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+  const slides = document.querySelector('.slides');
+  const slide = document.querySelectorAll('.slide');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  let currentIndex = 0;
+  const totalSlides = slide.length;
+  const slideWidth = 600; // 배너 가로 크기 (px)
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides; // 마지막 → 처음
+    updateSlide();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // 처음 → 마지막
+    updateSlide();
+  });
+</script>
+
+</body>
+</html>
