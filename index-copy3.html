@@ -3,144 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shirley</title>
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+            .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+        .menu-top {width: 1200px; height: 570px; margin: 0 auto;}
+.fso {width: 1200px; height: 35px; margin-top: 80px; display: flex; justify-content: space-between; align-items: center; }
+.font-1 {color: black;}
+.font-1:hover {color:  rgb(43, 167, 43);}
+.book-top {width: 100%; height: 535px; display: flex; justify-content: space-evenly; align-items: center;}
+.booklist{width: 270px; height: 420px; border: 1px solid #8c8c8c4c;}
+.booklist:hover {box-shadow: 2px 1px 10px #6363634d; cursor: pointer;}
+.booklist img {width: 160px; height: 232; margin: 20px 55px; box-shadow:  2px 1px 10px #444;}
+.booklist-bottom {margin: 0 20px;}
+.booklist p {padding-bottom: 5px; font-size: 19px;}
+.booklist p i {color: rgb(255, 166, 23);}
+.book-middle {color: rgb(43, 167, 43); font-size: 20px;}
+.p-1, .p-2 {font-weight: bold;}
+
+.s-l-box, .s-r-box {overflow: hidden; width: 580px; height: 250px; cursor: pointer;}
+.s-l-box img, .s-r-box img {transition: all 0.3s ease-in-out;}
+.s-l-box:hover img, .s-r-box:hover img {transform: scale(1.2);}
+
+.s-l-box, .s-r-box {position: relative;}
+.s-l-box-text, .s-r-box-text {position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 30px 45px; color: #f4f8fb;}
+.s-h4 {font-weight: 450;}
+.s-h3 {font-size: 30px; font-weight: 400; margin-bottom: 10px;}
+.sale img {width: 580px; height: 250px;}
+.s-l-box-text a, .s-r-box-text a {background: none; color: white; text-decoration:underline; font-weight: 300; margin-top: 30px;}
+.s-l-box-text a:hover, .s-r-box-text a:hover {color: rgb(43, 167, 43);}
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header_top">
-                <div class="logo">
-                    <img src="https://zhzhahd.github.io/book/img/logoshirley.png" alt="이미지">
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                 <div class="menu-top">  <!--책 메뉴 두 번째-->
+        <div class="fso">
+            <h1>Most Popular Book</h1>
+            <p><a class="font-1" style="font-size: large;" href="#">TOP RATED BOOKS</a></p>
+        </div>
+        <div class="book-top">
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1688378%3Ftimestamp%3D20230906151006" alt="Visualization i">
                 </div>
-                <div class="search">
-                    <input type="search" placeholder="Search our store">
-                    <button><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type1</p>
+                    <p>Visualization i</p>
+                    <p class="book-middle">₩19000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i></p>
                 </div>
-                <div class="mypage">
-                    <a href="#"><i class="fa-solid fa-bag-shopping icon-cart"></i></a>
-                    <a href="#">$0.00</a>
-                    <a href="#"><i class="fa-solid fa-gear icon-setting"></i></a>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3321498%3Ftimestamp%3D20230804172050" alt="Physics for Sci">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type2</p>
+                    <p>Physics for Sci</p>
+                    <p class="book-middle">₩57000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1706715%3Ftimestamp%3D20230918220439" alt="Writing Women i">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type3</p>
+                    <p>Writing Women i</p>
+                    <p class="book-middle">₩32000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F4881876%3Ftimestamp%3D20230503163533" alt="Seven Keys to M">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type4</p>
+                    <p>Seven Keys to M</p>
+                    <p class="book-middle">₩47000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
                 </div>
             </div>
         </div>
-
-        <nav>
-           <!--  <ul class="nav-list">
-                    <li class="has-submenu">
-                    <li><a href="#">Home</a></li>
-                        <div class="submenu">
-                            <ul class="submenu-group">
-                                <li><a href="#">Home1</a></li>
-                                <li><a href="#">Home2</a></li>
-                                <li><a href="#">Home3</a></li>
-                                <li><a href="#">Home RTL</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="#">Books</a>
-                        <div class="submenu">
-                            <ul class="submenu-group">Children's Books
-                                <li><a href="#">Arts & Photography</a></li>
-                                <li><a href="#">Biographhies & Memoirs</a></li>
-                                <li><a href="#">Children's Books</a></li>
-                                <li><a href="#">Cookbook.Food & Wine</a></li>
-                                <li><a href="#">History</a></li>
-                                <li><a href="#">Literature & Function</a></li>
-                            </ul>
-                            <ul class="submenu-group">Story Books
-                                <li><a href="#">Mystery & Suspense</a></li>
-                                <li><a href="#">Romance</a></li>
-                                <li><a href="#">Wi-fy & Fantasy</a></li>
-                                <li><a href="#">Teen & Young Aduit</a></li>
-                                <li><a href="#">Black Fashion Zapdram</a></li>
-                                <li><a href="#">Coneco Product sample</a></li>
-                            </ul>
-                            <ul class="submenu-group">History Books
-                                <li><a href="#">Daltex Product Example</a></li>
-                                <li><a href="#">Donkix Prouct Sample</a></li>
-                                <li><a href="#">Finity Product Sample</a></li>
-                                <li><a href="#">Fixair Product Sample</a></li>
-                                <li><a href="#">Geous White Bag</a></li>
-                                <li><a href="#">Geous White Dresses</a></li>
-                            </ul>
-                            <ul class="submenu-group">Cooking Books
-                                <li><a href="#">Golddax Product Example</a></li>
-                                <li><a href="#">New Releases</a></li>
-                                <li><a href="#">Best Sellers</a></li>
-                                <li><a href="#">Our Favourites</a></li>
-                                <li><a href="#">Reference Guides</a></li>
-                                <li><a href="#">Faculty Authors</a></li>
-                            </ul>
-                    </div>
-                    </li>
-                        </li>
-                        <li><a href="#"></a>Magazines</li>
-                        <li><a href="#"></a>TextBooks</li>
-                        <li><a href="#"></a>Pecomended</li>
-                        <li><a href="#"></a>Sale</li>
-                        <li>
-                        <a href="#">Pages</a>
-                    <div class="subnav">
-                        <ul class="submenu-group">
-                            <li><a href="#">About as</a></li>
-                            <li><a href="#">Contact as</a></li>
-                            <li><a href="#">FAQ pages</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul> -->
-        </nav> 
-
-    <div class="slider">
-  <div class="slides">
-    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+1" alt="배너1"></div>
-    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+2" alt="배너2"></div>
-    <div class="slide"><img src="https://via.placeholder.com/600x300?text=Banner+3" alt="배너3"></div>
-  </div>
-  <button class="prev">◀</button>
-  <button class="next">▶</button>
-</div>
-
-
-    <footer>
-        <div class="container2">
-
+      </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="menu-top">  <!--책 메뉴 두 번째 다음 장-->
+        <div class="fso">
+            <h1>Most Popular Book</h1>
+            <p><a class="font-2" style="font-size: large;" href="#">BEST SELLING BOOK</a></p>
         </div>
-    </footer>
+        <div class="book-top">
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1688378%3Ftimestamp%3D20230906151006" alt="Visualization i">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type1</p>
+                    <p>Visualization i</p>
+                    <p class="book-middle">₩19000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3321498%3Ftimestamp%3D20230804172050" alt="Physics for Sci">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type2</p>
+                    <p>Physics for Sci</p>
+                    <p class="book-middle">₩57000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F1706715%3Ftimestamp%3D20230918220439" alt="Writing Women i">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type3</p>
+                    <p>Writing Women i</p>
+                    <p class="book-middle">₩32000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F4881876%3Ftimestamp%3D20230503163533" alt="Seven Keys to M">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type4</p>
+                    <p>Seven Keys to M</p>
+                    <p class="book-middle">₩47000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-  const slides = document.querySelector('.slides');
-  const slide = document.querySelectorAll('.slide');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
+   
 
-  let currentIndex = 0;
-  const totalSlides = slide.length;
-  const slideWidth = 600; // 배너 가로 크기 (px)
+    
 
-  function updateSlide() {
-    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides; // 마지막 → 처음
-    updateSlide();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // 처음 → 마지막
-    updateSlide();
-  });
-</script>
-
+      <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
