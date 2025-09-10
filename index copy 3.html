@@ -381,8 +381,29 @@
         </div>
     </div>
 
+    <!-- 섹션 -->
+    <div class="section">
+        <div class="sec-box">
+            <h2>Most Popular Book</h2>
+            <div>
+                <a href="#"><button type="button" class="sec1 active">Top Rated Books</button></a>
+                <a href="#"><button type="button" class="sec2">Best selling book</button></a>
+            </div>
+        </div>
+            <article id="tab1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </article>
 
-      
+            <article id="tab2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </article>
+    </div>
 
      <footer>  <!--풋터-->
         <div class="container2">
@@ -414,10 +435,20 @@
     document.getElementById('bottom').addEventListener("click", () => {swiper.slidePrev (); });
   </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">  </script> <!--article -->
+  <!-- most -->
+    <script>
+        const cards = document.querySelectorAll(".book-card");
 
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+            // 모든 카드에서 active 제거
+            cards.forEach(c => c.classList.remove("active"));
 
-   
+            // 클릭한 카드만 active 추가
+            card.classList.add("active");
+            });
+        });
+    </script>
 
 </body>
 </html>
