@@ -298,6 +298,8 @@
         </div>
       </div>
 
+      
+
       <!-- 두 번째 슬라이드 -->
       <div id="slider2">
         <div class="swiper mySwiper2">
@@ -405,37 +407,7 @@
             </div>
     </div>
     
-    <script>
-        const cards = document.querySelectorAll(".sec1");
-
-        cards.forEach(card => {
-            card.addEventListener("click", () => {
-            // 모든 카드에서 active 제거
-            cards.forEach(c => c.classList.remove("active"));
-
-            // 클릭한 카드만 active 추가
-            card.classList.add("active");
-            });
-        });
-    </script>
-
-        <!--탭 전환-->
-    <script>  
-        const tabMenu = document.querySelectorAll('.tab-menu button');
-        const tabContent = document.querySelectorAll('#tab-content > div');
-        tabMenu.forEach(function(item, idx){
-            item.addEventListener('click', function(e){
-                e.preventDefault();
-                showContent(idx);
-            });
-        });
-        function showContent(num){
-            tabContent.forEach(function(item){
-                item.style.display = 'none';
-            });
-            tabContent[num].style.display = 'block';
-        };
-    </script>
+    
       
       <!-- most -->
     <div id="books-container">
@@ -443,7 +415,26 @@
      
     <!-- start_a_new -->
     <div class="start_a_new1">
+        <div class="start1">
+            <div class="start2">
+                <div class="start2-1">
+                    <h2>Start a new series - Up to 50% dff</h2>
+                    <p>we has the weekly promotion, keep up with us and you'll get the best deal to get your loved stuff. Our design reflects the purity of contemporary forms for enduring appeal.</p>
+                    <ul>
+                        <li>00 <p>Days</p></li>
+                        <li>00 <p>Hours</p></li>
+                        <li>00 <p>Min</p></li>
+                        <li>00 <p>Sec</p></li>
+                    </ul>
+                    <button class="btn-1">
+                        SHOP NOW
+                    </button>
+                </div>
+                <div class="start2-2">
 
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 슬라이드 -->
@@ -509,13 +500,13 @@
                 <div class="f-first">
                     <img src="./img/logoshirley.png" alt="logo1">
                     <p>subscribe to our newsletter, Enter <br> your email address.</p>
-                    <div class="f-text">
+                    <div class="f-text1">
                         <input type="email" placeholder="email@example.com">
                         <button><i class="fa-brands fa-pushed"></i></button>
                     </div>
                 </div>
                 <div class="f-second">
-                    <div class="f-text 2-1">
+                    <div class="f-text A-1">
                         <h4>Account</h4>
                         <ul>
                             <li>Login</li>
@@ -523,7 +514,7 @@
                             <li>My Account</li>
                         </ul>
                     </div>
-                    <div class="f-text 2-2">
+                    <div class="f-text A-1">
                         <h4>Footer Menu</h4>
                         <ul>
                             <li>Search</li>
@@ -531,12 +522,13 @@
                             <li>My Account</li>
                         </ul>
                     </div>
-                    <div class="f-text 2-3">
+                    <div class="f-text A-2">
                         <h4>About Store</h4>
                         <ul>
                             <li>No. 96, Jecica City, Nj 07305, New York, USA</li>
-                            <li>Phone : <p>123-456-789</p></li>
-                            <li>support@</li>
+                            <p>Phone : <span>123-456-789</span></p>
+                            <li class="A-2-1">support@example.com</li>
+                            <li>Open Hours: MN - ST: 8:00AM - 9:00PM</li>
                         </ul>
                     </div>
                 </div>
