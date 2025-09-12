@@ -381,14 +381,173 @@
         </div>
     </div>
 
+        <!-- 섹션 -->
+    <div class="section">
+        <div class="sect-box">
+            <h2>Most Popular Book</h2>
+            <div class="tab-menu">
+                <a href="tab1"><button type="button" class="sec1 active">Top Rated Books</button></a>
+                <a href="tab2"><button type="button" class="sec1">Best selling book</button></a>
+            </div>
+        </div id="tab-content">
+            <div id="tab1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
 
+            <div id="tab2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+    </div>
+    
+    <script>
+        const cards = document.querySelectorAll(".sec1");
+
+        cards.forEach(card => {
+            card.addEventListener("click", () => {
+            // 모든 카드에서 active 제거
+            cards.forEach(c => c.classList.remove("active"));
+
+            // 클릭한 카드만 active 추가
+            card.classList.add("active");
+            });
+        });
+    </script>
+
+        <!--탭 전환-->
+    <script>  
+        const tabMenu = document.querySelectorAll('.tab-menu button');
+        const tabContent = document.querySelectorAll('#tab-content > div');
+        tabMenu.forEach(function(item, idx){
+            item.addEventListener('click', function(e){
+                e.preventDefault();
+                showContent(idx);
+            });
+        });
+        function showContent(num){
+            tabContent.forEach(function(item){
+                item.style.display = 'none';
+            });
+            tabContent[num].style.display = 'block';
+        };
+    </script>
       
+      <!-- most -->
+    <div id="books-container">
+    </div>
+     
+    <!-- start_a_new -->
+    <div class="start_a_new1">
 
-     <footer>  <!--풋터-->
-        <div class="container2">
-            <p class="foot1">Facebook Twitter Linkedin Instagram</p>
-            <p class="foot2">Copyright All Right Reseved</p>
-            <img src="https://zhzhahd.github.io/book/img/footer_card.avif" alt="카드 사진">
+    </div>
+
+    <!-- 슬라이드 -->
+    <div class="bookbook1">
+
+    </div>
+
+    <div class="person">
+        <div class="person2">
+
+        </div>
+    </div>
+
+    <!-- LATEST BLOGS -->
+    <div class="latest">
+        <div class="latest-box">
+            <h3>LATEST BLOGS</h3>
+        </div>
+        <div class="last">
+            <div class="last-box 1">
+                <div class="last-box-img">
+                <a href="#"><img src="./img/blogs1.jpg" alt="1"></a>
+                </div>
+                    <a href="#"><h4>Signficant reading has a more info number</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+            </div>
+            <div class="last-box 2">
+                <div class="last-box-img">
+                <a href="#"><img src="./img/blogs2.jpg" alt="2"></a>
+                </div>
+                    <a href="#"><h4>Activities of the Frankfurt Book International</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p> 
+            </div>
+            <div class="last-box 3">
+                <div class="last-box-img">
+                <a href="#"><img src="./img/blogs3.jpg" alt="3"></a>
+                </div>
+                    <a href="#"><h4>The London Book Fair is to be packed with exciting</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>  <!--풋터-->
+        <div class="footer1">
+            <div class="footer-first">
+                <div class="f-first">
+                    <img src="./img/logoshirley.png" alt="logo1">
+                    <p>subscribe to our newsletter, Enter <br> your email address.</p>
+                    <div class="f-text">
+                        <input type="email" placeholder="email@example.com">
+                        <button><i class="fa-brands fa-pushed"></i></button>
+                    </div>
+                </div>
+                <div class="f-second">
+                    <div class="f-text 2-1">
+                        <h4>Account</h4>
+                        <ul>
+                            <li>Login</li>
+                            <li>Register</li>
+                            <li>My Account</li>
+                        </ul>
+                    </div>
+                    <div class="f-text 2-2">
+                        <h4>Footer Menu</h4>
+                        <ul>
+                            <li>Search</li>
+                            <li>Register</li>
+                            <li>My Account</li>
+                        </ul>
+                    </div>
+                    <div class="f-text 2-3">
+                        <h4>About Store</h4>
+                        <ul>
+                            <li>No. 96, Jecica City, Nj 07305, New York, USA</li>
+                            <li>Phone : <p>123-456-789</p></li>
+                            <li>support@</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container2">
+                <p class="foot1">Facebook Twitter Linkedin Instagram</p>
+                <p class="foot2">Copyright All Right Reseved</p>
+                <img src="https://zhzhahd.github.io/book/img/footer_card.avif" alt="카드 사진">
+            </div>
         </div>
     </footer>
 
@@ -416,8 +575,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">  </script> <!--article -->
 
-
-   
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 </html>
