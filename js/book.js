@@ -1,5 +1,5 @@
-
-        const cards = document.querySelectorAll(".sec1");
+// Most popular book 파트
+const cards = document.querySelectorAll(".sec1");
 
         cards.forEach(card => {
             card.addEventListener("click", () => {

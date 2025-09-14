@@ -26,8 +26,8 @@
 
 
 div {display: block;}
-.swiper mySwiper{position: relative;}
-#slider { width: 100%; height: 600px; background-color: #f4f8fb; display: flex; align-items: center; justify-content: center; }
+.swiper{position: relative;}
+#slider {width: 100%; height: 600px; background-color: #f4f8fb; display: flex; align-items: center; justify-content: center; }
 
 .l_box {width: 600px; height: 600px; padding-left: 20px; display: flex; flex-direction: column; text-align: left; margin-top: 300px;}
 .r_box {width: 600px; height: 600px;}
@@ -52,7 +52,31 @@ div {display: block;}
 
 .icon_top {width: 1200px; height: 250px; display: flex; justify-content: space-around; margin: 0 auto;}
 .icon {display: flex; justify-content: space-between; align-items: center;}
-.icon img {width:70px; margin-right: 30px;}
+.icon img {width:70px; margin-right: 30px; transition: transform 0.2s ease-in-out;}
+/* hover 없이도 부드럽게 변하도록 transition을 줄 수 있음. */
+/* transition은 특정한 속성이 변화할 때 그 변화를 애니메이션처럼 부드럽게 보여주라는 속성으로 어떤 속성을 변화시킬 지는
+color, opacity, width, transform 등의 속성을 넣을 수 있음. */
+/* ease-in-out : timing-function(시간 함수) 중 하나로 애니메이션이 진행되는 가속,감속 패턴 정하기
+linear 같은 속도, ease-in 점점 가속, ease-out 점점 감속, ease-in-out 가속+감속+가속
+= 내부적으로는 cubic-bezier(0.42, 0, 0.58, 1)-베지어 곡선 으로 정의되어 있음. */
+.icon:hover img{animation: move-scale 0.3s ease-in-out 1; transform-origin: centet centet;}
+/* transform-origin : <x> <y> <z?> => 가운데 축으로 회전/왜곡을 하겠다는 뜻.*/
+/* name(@keyframes 작성 시 필요한 이름), duraton(사이클 재생 시간), timing-function(타이밍, 이징), iteration-count(반복/재생 횟수)  */
+
+
+/* transition : 상태 변화에 반응 할 때만 실행. ex로 hover, focus, 클릭 시 클래스 추가 제거, 중간 값 자동 계산, 간단한 효과에 적함 
+animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 조정 가능, hover 없이도 자동 실행 가능, 복잡한 효과에 적합.
+간단하게 정리하자면 transition은 hover 시 살짝 커지거나 색 변화 등 가능, animation은 무한 회전, 3단계 변화 등 가능 */
+@keyframes move-scale {
+    0% {transform: scale(1) rotate(0deg);} /* retate : 요소를 transform-origin(기준점) 중심으로 회전*/
+    15% {transform: scale(1.2) rotate(-4deg);} /* deg : 각도 */
+    30% {transform: scale(1.2) rotate(4deg);}
+    45% {transform: scale(1.2) rotate(-4deg);}
+    60% {transform: scale(1.2) rotate(4deg);}
+    75% {transform: scale(1.2) rotate(-4deg);}
+    90% {transform: scale(1.2) rotate(4deg);}
+    100% {transform: scale(1) rotate(0deg);}
+}
 
 .sale {width:1200px; height: 250px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
 
@@ -115,7 +139,7 @@ div {display: block;}
 
 /* Start a new seriex */
 .start_a_new1 {width: 100%; height: 650px; background-image: url( "../img/time_back.jpg");}
-.start1 {width: 100%; height: 650px; background-color: rgba(15, 12, 32, 0.864); display: flex; justify-content: center; align-items: center;}
+.start1 {width: 100%; height: 650px; background-color: rgba(19, 23, 44, 0.864); display: flex; justify-content: center; align-items: center;}
 .start2 {width: 1200px; height: 650px; display: flex;}
 .start2-1 {width: 700px; height: 650px; color: white; display: flex; justify-content: center; flex-direction: column;}
 .start2-1 h2 {padding-bottom: 30px; font-size:39px; font-weight: 500;}
@@ -124,18 +148,40 @@ div {display: block;}
 .start2-1 ul li {width: calc(100% / 4); border-left:2px solid white; box-sizing: border-box;}
 .start2-1 ul li:last-child{border-right: 2px solid white;}
 .start2-1 ul li p {font-size: 15px; font-weight: 400;}
-.btn-1 {width: 177px; height: 70px; background: none; color: white; font-size: 17px; border: 3px solid;}
+.btn-1 {width: 160px; height: 65px; background: none; color: white; font-size: 17px; border: 3px solid;}
 .btn-1:hover {background:#62ab00; border-color: #62ab00; transition: all 0.5s;}
 
-.start2-2 {width: 500px; height: 650px; background-color: #b9ff23;  display:flex;}
+.start2-2 {width: 500px; height: 650px; display:flex; justify-content: center; align-items: center;}
+#slider3 {width: 470px; height: 555px; cursor: pointer;}
+#start-slider img{width: 365px; height: 450px; position: relative;}
+.myswiper3 {position: relative;}
+
+.swiper-button-next3, .swiper-button-prev3 {width: 60px; height: 60px; background: white;  border: none; border-radius: 50%; display: flex; justify-content: center;
+align-items: center; position: absolute; top: 50%; transform: translateY(-50%); z-index: 20; cursor: pointer; opacity: 0%;}
+/* transform: translateY() : 세로 중앙에 맞추기 X는 가로중앙 */
+#slider3:hover .swiper-button-next3, #slider3:hover .swiper-button-prev3 {opacity: 100%; transition: all 0.3s ease-in-out;}
+.swiper-button-next3 {right: 30px;}
+.swiper-button-prev3 {left: 30px;}
+
+
+
+/* Limmited Time offer 슬라이드 */
 
 
 
 
-.bookbook1 {width: 100%; height: 650px; background-color: #95ff0a; margin-top: 20px;}
+/* person 슬라이드 */
+.person {width: 100%; height: 650px; background-image: url("../img/swiper_back3.jpg"); } 
+            /* 사진 물어보기 */
+.person2 {width: 100%; height: 650px; background-color: rgba(12, 27, 48, 0.8); display: flex; justify-content: center; align-items: center;}
+#slider4 {width: 1200px; height: 650px; cursor: pointer;}
+.person-face-img {display: flex; justify-content: center;}
+#last-slider img{width: 100px; height: 100px; margin-bottom: 50px; border: none; border-radius: 50%; display: flex; justify-content: center; }
+#last-slider p {color: white; font-weight: 350; line-height: 40px; letter-spacing: 0.7px;}
+#last-slider h4 {color: white; font-weight: 400; padding-top: 50px;}
 
-.person{width: 100%; height: 650px; background-color: #3dbbff4c; margin-top: 20px; margin-bottom: 20px;} 
 
+/* LATEST BLOGS */
 .latest {width: 100%; height: 650px; }
 .latest-box {width: 100%; height: 115px; display: flex; justify-content: center; padding-top: 90px auto ; text-align: center; }
 .latest-box h3 {font-size: 30px; font-weight: 400; padding-top: 45px;}
@@ -143,7 +189,7 @@ div {display: block;}
 .last-box {width: 400px; height: 515px; margin-right: 6px; padding: 0 15px;}
 .last-box-img{width: 370px; height: 235px; overflow: hidden;}
 .last-box img { width: 370px; height: 235px; transition: all 0.5s ease-in-out;}
-.last-box img:hover {transform: scale(1.1);}
+.last-box:hover img{transform: scale(1.1);}
 .last-box h4 {font-size: 18px; font-weight: 350; color: black; padding:16px 0;}
 .last-box h4:hover {color: #62ab00; transition: all 0.3s;}
 .last-box ul {font-size: 13px; font-weight: 300; opacity: 0.8; border-top: 1px solid rgba(0, 0, 0, 0.2); display: flex; padding: 16px 0;}

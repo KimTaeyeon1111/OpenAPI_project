@@ -6,37 +6,23 @@
     <title>shirley</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/common copy.css">
+    <link rel="stylesheet" href="./css/index copy.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!-- 폰트 설정 다시 알아보기 -->
-
+    <link rel="stylesheet" href="./js/book copy.js">
 </head>
 <body>
-    <!-- <div class="start-box"> 
-        <div class="content1">
-            <img src="//shirley-demo.myshopify.com/cdn/shop/files/slider-thumb5_440x550_crop_center.png?v=1613561943" alt="책">
-        </div>
-        <div>
-            <h2>News letter</h2>
-            <p>Join over 1,000 people who get free and fresh <br>
-            content dlivered automatically each time we publish.
-            </p>
-        </div>
-        <div class="form">
-            <div>
-                <input type="text" name="e-mail" placeholder="email@example.com">
-                <button type="submit" class="btn3">Subscribe</button> 
-                <p><input type="checkbox" name="checkbox">Don;t show this again.</p>
-            </div>
-        </div>
-    </div>  -->
+
+    <!-- 맨 위로 올라가기 버튼 (지피티 참고)-->
+    <a href="#" id="back-to-top" class="back-to-top">▲</a>
+
 
     <header> <!-- 헤더 -->
         <div class="container">
             <div class="header_top">
                 <div class="logo">  <!-- 로고 -->
-                    <img src="https://zhzhahd.github.io/book/img/logoshirley.png" alt="이미지">
+                    <a href="#"><img src="./img/logoshirley.png" alt="이미지"></a>
                 </div>
                 <div class="search">  <!-- 서치 -->
                     <input type="search" placeholder="Search our store">
@@ -49,77 +35,73 @@
                 </div>
             </div>
         </div>
+        
 
-        <nav class="nav-top">
-            <nav>
-            <!--  <ul class="nav-list">
-                        <li class="has-submenu">
-                        <li><a href="#">Home</a></li>
-                            <div class="submenu">
-                                <ul class="submenu-group">
-                                    <li><a href="#">Home1</a></li>
-                                    <li><a href="#">Home2</a></li>
-                                    <li><a href="#">Home3</a></li>
-                                    <li><a href="#">Home RTL</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#">Books</a>
-                            <div class="submenu">
-                                <ul class="submenu-group">Children's Books
-                                    <li><a href="#">Arts & Photography</a></li>
-                                    <li><a href="#">Biographhies & Memoirs</a></li>
-                                    <li><a href="#">Children's Books</a></li>
-                                    <li><a href="#">Cookbook.Food & Wine</a></li>
-                                    <li><a href="#">History</a></li>
-                                    <li><a href="#">Literature & Function</a></li>
-                                </ul>
-                                <ul class="submenu-group">Story Books
-                                    <li><a href="#">Mystery & Suspense</a></li>
-                                    <li><a href="#">Romance</a></li>
-                                    <li><a href="#">Wi-fy & Fantasy</a></li>
-                                    <li><a href="#">Teen & Young Aduit</a></li>
-                                    <li><a href="#">Black Fashion Zapdram</a></li>
-                                    <li><a href="#">Coneco Product sample</a></li>
-                                </ul>
-                                <ul class="submenu-group">History Books
-                                    <li><a href="#">Daltex Product Example</a></li>
-                                    <li><a href="#">Donkix Prouct Sample</a></li>
-                                    <li><a href="#">Finity Product Sample</a></li>
-                                    <li><a href="#">Fixair Product Sample</a></li>
-                                    <li><a href="#">Geous White Bag</a></li>
-                                    <li><a href="#">Geous White Dresses</a></li>
-                                </ul>
-                                <ul class="submenu-group">Cooking Books
-                                    <li><a href="#">Golddax Product Example</a></li>
-                                    <li><a href="#">New Releases</a></li>
-                                    <li><a href="#">Best Sellers</a></li>
-                                    <li><a href="#">Our Favourites</a></li>
-                                    <li><a href="#">Reference Guides</a></li>
-                                    <li><a href="#">Faculty Authors</a></li>
-                                </ul>
-                        </div>
-                        </li>
-                            </li>
-                            <li><a href="#"></a>Magazines</li>
-                            <li><a href="#"></a>TextBooks</li>
-                            <li><a href="#"></a>Pecomended</li>
-                            <li><a href="#"></a>Sale</li>
-                            <li>
-                            <a href="#">Pages</a>
-                        <div class="subnav">
-                            <ul class="submenu-group">
-                                <li><a href="#">About as</a></li>
-                                <li><a href="#">Contact as</a></li>
-                                <li><a href="#">FAQ pages</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul> -->
-            </nav>
-        </nav>
-
+        <!-- 네비게이션 -->
+    <nav>
+        <ul class="nav-start">
+            <li class="nav-second"><a href="#">Home</a>
+                <ul class="nav-second-1">
+                    <li class="nav-second-2"><a href="#">Home1</a></li>
+                    <li class="nav-second-2"><a href="#">Home2</a></li>
+                    <li class="nav-second-2"><a href="#">Home3</a></li>
+                    <li class="nav-second-2"><a href="#">Home RTL</a></li>
+                </ul>
+            </li>
+            <li class="nav-second submenu1"><a href="#">Books</a>
+                <div class="nav-second-div">
+                    <ul class="nav-second-1 sebmenu-1">
+                        <li class="nav-second-2 books-first-li">Children's Books</li>
+                        <li class="nav-second-2"><a href="#">Arts & Photography</a></li>
+                        <li class="nav-second-2"><a href="#">Biographies & Memoirs</a></li>
+                        <li class="nav-second-2"><a href="#">Children's Books</a></li>
+                        <li class="nav-second-2"><a href="#">Cookbook. Food & Wine</a></li>
+                        <li class="nav-second-2"><a href="#">History</a></li>
+                        <li class="nav-second-2"><a href="#">Literature & Fiction</a></li>
+                    </ul>
+                    <ul class="nav-second-1 sebmenu-1">
+                        <li class="nav-second-2 books-first-li">Story Book</li>
+                        <li class="nav-second-2"><a href="#">Mystery & Suspense</a></li>
+                        <li class="nav-second-2"><a href="#">Romance</a></li>
+                        <li class="nav-second-2"><a href="#">Wi-fy & Fantasy</a></li>
+                        <li class="nav-second-2"><a href="#">Teen & Young Adult</a></li>
+                        <li class="nav-second-2"><a href="#">Black Fashion Zapdram</a></li>
+                        <li class="nav-second-2"><a href="#">Coneco Product sample</a></li>
+                    </ul>
+                    <ul class="nav-second-1 sebmenu-1">
+                        <li class="nav-second-2 books-first-li">History Books</li>
+                        <li class="nav-second-2"><a href="#">Daltex Product Example</a></li>
+                        <li class="nav-second-2"><a href="#">Donkix Product Sample</a></li>
+                        <li class="nav-second-2"><a href="#">Finity Product Sample</a></li>
+                        <li class="nav-second-2"><a href="#">Fixair Product Sample</a></li>
+                        <li class="nav-second-2"><a href="#">Geous White Bag</a></li>
+                        <li class="nav-second-2"><a href="#">Geous White Dresses</a></li>
+                    </ul>
+                    <ul class="nav-second-1 sebmenu-1">
+                        <li class="nav-second-2 books-first-li">Cooking book</li>
+                        <li class="nav-second-2"><a href="#">Golddax Product Example</a></li>
+                        <li class="nav-second-2"><a href="#">New Releases</a></li>
+                        <li class="nav-second-2"><a href="#">Best Sellers</a></li>
+                        <li class="nav-second-2"><a href="#">Our Favourites</a></li>
+                        <li class="nav-second-2"><a href="#">Reference Guides</a></li>
+                        <li class="nav-second-2"><a href="#">Faculty Authors</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-second"><a href="#">Magazines</a></li>
+            <li class="nav-second"><a href="#">Text Books</a></li>
+            <li class="nav-second"><a href="#">Recomended</a></li>
+            <li class="nav-second"><a href="#">Sale</a></li>
+            <li class="nav-second"><a href="#">Page</a>
+                <ul class="nav-second-1">
+                    <li class="nav-second-2"><a href="#">About Us</a></li>
+                    <li class="nav-second-2"><a href="#">Contact Us</a></li>
+                    <li class="nav-second-2"><a href="#">FAQ Page</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+            
     <div id="slider">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -134,7 +116,7 @@
                             </button>
                         </div>
                         <div class="r_box">
-                            <img src="https://zhzhahd.github.io/book/img/slider1.png" alt="book1">
+                            <img src="./img/slider1.png" alt="book1">
                         </div>
                     </div>
                 </div>
@@ -149,28 +131,27 @@
                             </button>
                         </div>
                         <div class="r_box">
-                            <img src="https://zhzhahd.github.io/book/img/slider2.png" alt="book1">
+                            <img src="./img/slider2.png" alt="book1">
                         </div>
                     </div>
                 </div>
             </div>
-                <div id="scr">  <!-- 슬라이드 버튼 -->
-                    <div id="top">
-                        <i class="fa-solid fa-chevron-up"></i>
-                    </div>
-                    <div id="bottom">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
+            <div id="scr">  <!-- 슬라이드 버튼 -->
+                <div id="top">
+                    <i class="fa-solid fa-chevron-up"></i>
                 </div>
+                <div id="bottom">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
         </div>
-            
     </div>
 
-    <!-- 부가메뉴 -->
+    <!-- 아이콘 메뉴 -->
     <div class="icon_top">
         <div class="icon">
             <div>
-                <img src="https://zhzhahd.github.io/book/img/icon01_small.png" alt="Quick Delivery">
+                <img src="./img/icon01_small.png" alt="Quick Delivery">
             </div>
             <div>
                 <h2 class="i-h2">Quick Delivery</h2>
@@ -179,7 +160,7 @@
         </div>
         <div class="icon">
             <div>
-                <img src="https://zhzhahd.github.io/book/img/icon02_small.png" alt="pay with easy">
+                <img src="./img/icon02_small.png" alt="pay with easy">
             </div>
             <div>
                 <h2 class="i-h2">Pay with Easy</h2>
@@ -188,7 +169,7 @@
         </div>
         <div class="icon">
             <div>
-                <img src="https://zhzhahd.github.io/book/img/icon03_small.png" alt="Best Deal">
+                <img src="./img/icon03_small.png" alt="Best Deal">
             </div>
             <div>
                 <h2 class="i-h2">Best Deal</h2>
@@ -197,7 +178,7 @@
         </div>
         <div class="icon">
             <div>
-                <img src="https://zhzhahd.github.io/book/img/icon04_small.png" alt="Secured Payment">
+                <img src="./img/icon04_small.png" alt="Secured Payment">
             </div>
             <div>
                 <h2 class="i-h2">Secured Payment</h2>
@@ -209,7 +190,7 @@
      <!-- 세일 -->
       <div class="sale">
         <div class="s-l-box">
-            <img src="https://zhzhahd.github.io/book/img/twocut1.jpg" alt="sale1">
+            <img src="./img/twocut1.jpg" alt="sale1">
             <div class="s-l-box-text">
                 <h4 class="s-h4">SPECIAL OFFER</h4>
                 <h3 class="s-h3">Buy 3. Get <br> 1 Free</h3>
@@ -217,7 +198,7 @@
             </div>
         </div>
         <div class="s-r-box">
-            <img src="https://zhzhahd.github.io/book/img/twocut2.jpg" alt="sale2">
+            <img src="./img/twocut2.jpg" alt="sale2">
             <div class="s-r-box-text">
                 <h4 class="s-h4">$50.00</h4>
                 <h3 class="s-h3">Praise for <br> The Night Child</h3>
@@ -226,77 +207,41 @@
         </div>
       </div>
 
-      <!-- 부가메뉴2 -->
-      <div class="menu-top">
-        <div class="fso">
-            <h1>Flash Sale Offer</h1>
-            <a class="font-1" style="font-size: large;" href="#">VEIW MORE</a>
-        </div>
-        <div class="book-top">
-            <div class="booklist">
-                <div>
-                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F540824%3Ftimestamp%3D20250904110238" alt="싯다르타">
-                </div>
-                <div class="booklist-bottom">
-                    <p class="p-1">ㅡ Type1</p>
-                    <p>싯다르타</p>
-                    <p class="book-middle">₩8000</p>
-                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i></p>
-                    
-                </div>
+      <!-- 책 모음 1 -->
+
+    <div class="book-group-1">
+        <div class="book-group-1-1">
+            <div class="b-g-1">
+                <h2>Flash Sale Offer</h2>
+                <p><a href="#">VIEW MORE</a></p>
             </div>
-            <div class="booklist">
-                <div>
-                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5690334%3Ftimestamp%3D20250822135634" alt="프랑켄슈타인">
-                </div>
-                <div class="booklist-bottom">
-                    <p class="p-1">ㅡ Type2</p>
-                    <p>프랑켄슈타인(무삭제 완역본)</p>
-                    <p class="book-middle">₩8800</p>
-                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i></p>
-                </div>
-            </div>
-            <div class="booklist">
-                <div>
-                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3579488%3Ftimestamp%3D20241122114223" alt="Essentials of M">
-                </div>
-                <div class="booklist-bottom">
-                    <p class="p-1">ㅡ Type3</p>
-                    <p>Essentials of M</p>
-                    <p class="book-middle">₩49000</p>
-                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i></p>
-                </div>
-            </div>
-            <div class="booklist">
-                <div>
-                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3130560%3Ftimestamp%3D20190218000431" alt="Physics for Sci">
-                </div>
-                <div class="booklist-bottom">
-                    <p class="p-1">ㅡ Type4</p>
-                    <p>Physics for Sci</p>
-                    <p class="book-middle">₩52000</p>
-                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </p>
+            <div class="b-g-2">
+                <div id="slider10">
+                    <div class="swiper mySwiper10">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                        </div>
+                        <div class="scr10">
+                                <div cl="swiper-button-next10"></div>
+                                <div class="swiper-button-prev10"></div>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
+      
 
       <!-- 두 번째 슬라이드 -->
       <div id="slider2">
@@ -375,9 +320,12 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="scr2">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
         </div>
     </div>
 
@@ -386,73 +334,291 @@
         <div class="sect-box">
             <h2>Most Popular Book</h2>
             <div class="tab-menu">
-                <a href="tab1"><button type="button" class="sec1 active">Top Rated Books</button></a>
-                <a href="tab2"><button type="button" class="sec1">Best selling book</button></a>
+                <a href="#"><button type="button" class="sec1 active">Top Rated Books</button></a>
+                <a href="#"><button type="button" class="sec1">Best selling book</button></a>
             </div>
         </div id="tab-content">
             <div id="tab1">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
             </div>
-
             <div id="tab2">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
+                <div class="box1"></div>
             </div>
     </div>
     
-    <script>
-        const cards = document.querySelectorAll(".sec1");
-
-        cards.forEach(card => {
-            card.addEventListener("click", () => {
-            // 모든 카드에서 active 제거
-            cards.forEach(c => c.classList.remove("active"));
-
-            // 클릭한 카드만 active 추가
-            card.classList.add("active");
-            });
-        });
-    </script>
-
-        <!--탭 전환-->
-    <script>  
-        const tabMenu = document.querySelectorAll('.tab-menu button');
-        const tabContent = document.querySelectorAll('#tab-content > div');
-        tabMenu.forEach(function(item, idx){
-            item.addEventListener('click', function(e){
-                e.preventDefault();
-                showContent(idx);
-            });
-        });
-        function showContent(num){
-            tabContent.forEach(function(item){
-                item.style.display = 'none';
-            });
-            tabContent[num].style.display = 'block';
-        };
-    </script>
+    
       
       <!-- most -->
     <div id="books-container">
     </div>
      
     <!-- start_a_new -->
+    <div class="start_a_new1">
+        <div class="start1">
+            <div class="start2">
+                <div class="start2-1">
+                    <h2>Start a new series - Up to 50% dff</h2>
+                    <p>we has the weekly promotion, keep up with us and you'll get the best deal to get your loved stuff. Our design reflects the purity of contemporary forms for enduring appeal.</p>
+                    <ul>
+                        <li>00 <p>Days</p></li>
+                        <li>00 <p>Hours</p></li>
+                        <li>00 <p>Min</p></li>
+                        <li>00 <p>Sec</p></li>
+                    </ul>
+                    <button class="btn-1">
+                        SHOP NOW
+                    </button>
+                </div>
+                <div class="start2-2">
+                    <div id="slider3">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <!-- 첫 번째 슬라이드 -->
+                                    <div id="start-slider">
+                                        <img src="./img/time_book1.png" alt="1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> <!-- 두 번째 슬라이드 -->
+                                    <div id="start-slider">
+                                        <img src="./img/time_book2.png" alt="2">
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="swiper-button-next3"> <i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="swiper-button-prev3"><i class="fa-solid fa-chevron-left"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- 
-  <!-- 위 스크립트 -->
-  <script src="script.js"></script>
-  
+    <!-- Limmited Time offer 슬라이드 -->
+    <div class="menu-top">
+        <div class="fso">
+            <h1>Flash Sale Offer</h1>
+            <a class="font-1" style="font-size: large;" href="#">VEIW MORE</a>
+        </div>
+        <div class="book-top">
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F540824%3Ftimestamp%3D20250904110238" alt="싯다르타">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type1</p>
+                    <p>싯다르타</p>
+                    <p class="book-middle">₩8000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i></p>
+                    
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F5690334%3Ftimestamp%3D20250822135634" alt="프랑켄슈타인">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type2</p>
+                    <p>프랑켄슈타인(무삭제 완역본)</p>
+                    <p class="book-middle">₩8800</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3579488%3Ftimestamp%3D20241122114223" alt="Essentials of M">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type3</p>
+                    <p>Essentials of M</p>
+                    <p class="book-middle">₩49000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i></p>
+                </div>
+            </div>
+            <div class="booklist">
+                <div>
+                    <img src="https://search1.kakaocdn.net/thumb/R120x174.q85/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flbook%2Fimage%2F3130560%3Ftimestamp%3D20190218000431" alt="Physics for Sci">
+                </div>
+                <div class="booklist-bottom">
+                    <p class="p-1">ㅡ Type4</p>
+                    <p>Physics for Sci</p>
+                    <p class="book-middle">₩52000</p>
+                    <p class="p-2">ㅡ <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- person 슬라이드 -->
+    <div class="person">
+        <div class="person2">
+            <div id="slider4">
+                <div class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <!-- 첫 번째 슬라이드 -->
+                            <div id="last-slider">
+                                <div class="person-face-img">
+                                    <img src="./img/person1.jpg" alt="1">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor <br>
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure <br>
+                                dolor in reprehenderit.</p>
+                                <h4>HESTER PERKINS</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- 두 번째 슬라이드 -->
+                            <div id="last-slider">
+                                <div class="person-face-img">
+                                    <img src="./img/person2.jpg" alt="2">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor <br>
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure <br>
+                                dolor in reprehenderit.</p>
+                                <h4>HESTER PERKINS</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <!-- 세 번째 슬라이드 -->
+                            <div id="last-slider">
+                                <div class="person-face-img">
+                                    <img src="./img/person3.jpg" alt="3">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmode tempor <br>
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure <br>
+                                dolor in reprehenderit.</p>
+                                <h4>NICOLE VALDEZ</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- LATEST BLOGS -->
+    <div class="latest">
+        <div class="latest-box">
+            <h3>LATEST BLOGS</h3>
+        </div>
+        <div class="last">
+            <div class="last-box 1">
+                <div class="last-box-img">
+                <a href=""><img src="./img/blogs1.jpg" alt="1"></a>
+                </div>
+                    <a href="#"><h4>Signficant reading has a more info number</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+            </div>
+            <div class="last-box 2">
+                <div class="last-box-img">
+                <a href="#"><img src="./img/blogs2.jpg" alt="2"></a>
+                </div>
+                    <a href="#"><h4>Activities of the Frankfurt Book International</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p> 
+            </div>
+            <div class="last-box 3">
+                <div class="last-box-img">
+                <a href="#"><img src="./img/blogs3.jpg" alt="3"></a>
+                </div>
+                    <a href="#"><h4>The London Book Fair is to be packed with exciting</h4></a>
+                    <ul>
+                        <li>10 November, 2019</li>
+                        <li>\</li>
+                        <a href="#"><li>0 comments</li></a>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ipsum deleniti repellendus nam deserunt vitae ullam amet quos! Nesciunt, quo. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing...</p>
+            </div>
+        </div>
+    </div>
+
 
     <footer>  <!--풋터-->
-        <div class="container2">
-            <p class="foot1">Facebook Twitter Linkedin Instagram</p>
-            <p class="foot2">Copyright All Right Reseved</p>
-            <img src="https://zhzhahd.github.io/book/img/footer_card.avif" alt="카드 사진">
+        <div class="footer1">
+            <div class="footer-first">
+                <div class="f-first">
+                    <img src="./img/logoshirley.png" alt="logo1">
+                    <p>subscribe to our newsletter, Enter <br> your email address.</p>
+                    <div class="f-text1">
+                        <input type="email" placeholder="email@example.com">
+                        <button><i class="fa-brands fa-pushed"></i></button>
+                    </div>
+                </div>
+                <div class="f-second">
+                    <div class="f-text A-1">
+                        <h4>Account</h4>
+                        <ul>
+                            <li>Login</li>
+                            <li>Register</li>
+                            <li>My Account</li>
+                        </ul>
+                    </div>
+                    <div class="f-text A-1">
+                        <h4>Footer Menu</h4>
+                        <ul>
+                            <li>Search</li>
+                            <li>Contect Us</li>
+                            <li>Shop</li>
+                        </ul>
+                    </div>
+                    <div class="f-text A-2">
+                        <h4>About Store</h4>
+                        <ul>
+                            <li>No. 96, Jecica City, Nj 07305, New York, USA</li>
+                            <p>Phone : <span>123-456-789</span></p>
+                            <li class="A-2-1">support@example.com</li>
+                            <li>Open Hours: MN - ST: 8:00AM - 9:00PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container2">
+                <p class="foot1">
+                    <a href="https://www.facebook.com/?locale=ko_KR">Facebook</a>
+                    <a href="https://x.com/i/flow/login?lang=ko">Twitter</a>
+                    <a href="https://kr.linkedin.com/">Linkedin</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                </p>
+                <p class="foot2">Copyright All Right Reseved</p>
+                <a href="#"><img src="https://zhzhahd.github.io/book/img/footer_card.avif" alt="카드 사진"></a>
+            </div>
         </div>
     </footer>
 
@@ -460,12 +626,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
+        // 1번
     const swiper = new Swiper(".mySwiper", {
         loop: true,   // 무한반복
         allowTouchMove: false,  // 마우스 드래그 터치 X
     });
 
+    document.getElementById('top').addEventListener("click", () =>{swiper.slideNext(); });
+    document.getElementById('bottom').addEventListener("click", () => {swiper.slidePrev (); });
+
+        // 2번
     const swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
         slidesPerView: 2.5,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -474,23 +646,79 @@
         allowTouchMove: true,  // 마우스 드래그 터치 O
     });
 
-    document.getElementById('top').addEventListener("click", () =>{swiper.slideNext(); });
-    document.getElementById('bottom').addEventListener("click", () => {swiper.slidePrev (); });
+        //3번
+    const swiper3 = new Swiper(".mySwiper3", {
+        loop: true, 
+        navigation: {
+            nextEl: ".swiper-button-next3",
+            prevEl: ".swiper-button-prev3",
+        },
+        allowTouchMove: false,  // 마우스 드래그 터치 X
+    });
+    
+        //4번
+    const swiper4 = new Swiper(".mySwiper4", {
+        loop: true,   // 무한반복
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        allowTouchMove: false,  // 마우스 드래그 터치 X
+    });
+
+
+        // 스크롤 버튼
+        window.addEventListener("scroll", () => {
+        const btn = document.getElementById("back-to-top");
+        if (window.scrollY > 100) {
+            btn.classList.add("visible");
+        } else {
+            btn.classList.remove("visible");
+        }
+        });
+
+        // 버튼 클릭하면 맨 위로 부드럽게 이동.
+        document.getElementById("back-to-top").addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        });
+
+            // API 첫 번째
+            var swiper10 = new Swiper(".mySwiper10", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                },
+                "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                },
+                "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 50,
+                },
+            },
+            });
+  </script>
   </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">  </script> <!--article -->
 
-    <script>
-        const slides = document.querySelectorAll('.slide'); 
-        let current = 0;
-        
-        const showSlide = (i) => { slides[current].classList.remove('active'); 
-        current = (i + slides.length) % slides.length; slides[current].classList.add('active'); }; 
 
-        document.getElementById('next').onclick = () => showSlide(current + 1); 
-        document.getElementById('prev').onclick = () => showSlide(current - 1);
-        setInterval(() => showSlide(current + 1), 5000);
-    </script>
 
 </body>
 </html>
