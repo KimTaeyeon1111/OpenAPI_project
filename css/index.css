@@ -78,6 +78,8 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
     100% {transform: scale(1) rotate(0deg);}
 }
 
+
+/* 세일 품목 */
 .sale {width:1200px; height: 250px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
 
 .s-l-box, .s-r-box {overflow: hidden; width: 580px; height: 250px; cursor: pointer;}
@@ -92,19 +94,52 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 .s-l-box-text a, .s-r-box-text a {background: none; color: white; text-decoration:underline; font-weight: 300; margin-top: 30px;}
 .s-l-box-text a:hover, .s-r-box-text a:hover {color: rgb(43, 167, 43);}
 
-.menu-top {width: 1200px; height: 570px; margin: 0 auto;}
-.fso {width: 1200px; height: 35px; margin-top: 80px; display: flex; justify-content: space-between; align-items: center; }
-.font-1 {color: black;}
-.font-1:hover {color:  rgb(43, 167, 43);}
-.book-top {width: 100%; height: 535px; display: flex; justify-content: space-evenly; align-items: center;}
-.booklist{width: 270px; height: 420px; border: 1px solid #8c8c8c4c;}
-.booklist:hover {box-shadow: 2px 1px 10px #6363634d; cursor: pointer;}
-.booklist img {width: 160px; height: 232; margin: 20px 55px; box-shadow:  2px 1px 10px #444;}
-.booklist-bottom {margin: 0 20px;}
-.booklist p {padding-bottom: 5px; font-size: 19px;}
-.booklist p i {color: rgb(255, 166, 23);}
-.book-middle {color: rgb(43, 167, 43); font-size: 20px;}
-.p-1, .p-2 {font-weight: bold;}
+
+/* API 첫 번째 */
+#book-group-1 { width: 100%; height: 570px; display: flex; justify-content: center; align-items: center; margin-top: 50px;}
+.book-group-1-1 { width: 1200px; height: 570px; }
+.b-g-1 {width: 1200px; height: 50px; display: flex; justify-content: space-between; align-items: center;}
+.b-g-1 h2 {font-weight: 450; font-size: 25px;}
+.b-g-1 p a {font-weight: 450; transition: all 0.4s;}
+.b-g-1 p a:hover {color: #62ab00;}
+
+.b-g-2 {position: relative; width: 1200px; height: 450px; display: flex; justify-content: center; align-items: center; }
+#slider10 {width: 1200px; height: 450px; position: relative; display: flex; justify-content: center; align-items: center; }
+.mySwiper10 .swiper-wrapper{display: flex; justify-content: space-between; }
+.scr10 {display: flex; width: 1200px; justify-content: space-between; position: absolute; top:200px}
+.swiper-button-next10, .swiper-button-prev10 {width: 50px; height: 50px; background-color: white; border-radius: 50%; border: 1px solid #44444442; display: flex; z-index: 30; opacity: 0; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; cursor: pointer;}
+.swiper-button-next10 {margin-right: -18px;}
+.swiper-button-prev10 {margin-left: -18px;}
+#slider10:hover .swiper-button-next10, #slider10:hover .swiper-button-prev10 {box-shadow: 0 1px 5px #4444445b; visibility: visible; opacity: 1;}
+.mySwiper10 {position: relative; display: flex;}
+.b-g-2-1 {position: absolute; display: flex;}
+.b-g-2-2 {position: absolute; display: flex;}
+.scr10 i {color: #4444446c; font-size: 30px; padding: 9px 15px;}
+
+.box {width: 267px; height: 415px; margin: 20px; border-radius: 4px; border: 1px solid #00000018; position: relative; }
+.box:hover {box-shadow: 4px 4px 10px #49484855;}    
+.box i {position: absolute;}
+
+.box img {width: 140px; height: 220px; margin-top: 10px; margin-bottom: 10px; box-shadow: 0 4px 5px #00000047;}
+.box h3 {width: 250px; }
+.box h6 {width: 250px; }
+.box p {width: 250px; }
+
+.box {display: flex; align-items: center; flex-direction: column;}
+.box i{opacity: 0; visibility: hidden; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; font-size: 20px; margin-top: 15px; transform: translateX(-100px) translateY(40px);}
+.box i {cursor: pointer;}
+.box i:nth-child(1) {top: -2px;}
+.box i:nth-child(2) {top: 32px;}
+.box i:nth-child(3) {top: 64px;}
+.box i:nth-child(4) {top: 96px;}
+.box:hover i {opacity: 1; visibility: visible;}
+.box i:hover {color: #62ab00; transition: all 0.3s;}
+
+
+
+
+
+
 
 
 /* 두 번째 슬라이드 */
@@ -121,8 +156,10 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 .shopButton2 {width:135px; height: 50px; color: white; background: none; border: 2px solid white;}
 .shopButton2:hover {background-color: #62ab00; color: white; transition: all 0.5s; border: none; cursor: pointer;}
 
+
+/* Most */
 .section {width: 1200px; height: 640px; display: flex; margin: 0 auto; justify-content: center; background-color: #b9ff23;}
-.sect-box {width: 1200px; height: 62px; background-color: aqua; display: flex; justify-content: space-between; }
+.sect-box {width: 1200px; height: 62px; background-color: aqua; display: flex; justify-content: space-between;}
 .sect-box h2 {display: flex; align-items: center; margin-left: 10px; font-weight: 400;}
 .sec1{width: 165px; height: 45px; margin: 10px 5px; font-size: 18px; border: none; background-color: #d2d2d2; color: rgb(0, 0, 0); cursor: pointer;}
 .active {background-color: #62ab00; color: white;}
@@ -137,7 +174,7 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 .book-author { font-size: 12px; color: #555;}
 
 
-/* Start a new seriex */
+/* Start a new series */
 .start_a_new1 {width: 100%; height: 650px; background-image: url( "../img/time_back.jpg");}
 .start1 {width: 100%; height: 650px; background-color: rgba(19, 23, 44, 0.864); display: flex; justify-content: center; align-items: center;}
 .start2 {width: 1200px; height: 650px; display: flex;}
