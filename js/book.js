@@ -1,20 +1,19 @@
 // Most popular book 파트
-const cards = document.querySelectorAll('.tab-menu button');
-console.log(cards);
+const buttons = document.querySelectorAll('.sec1');
 
-cards.forEach(card => {
-    card.addEventListener("click", () => {
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
     // 모든 카드에서 active 제거
-    cards.forEach(c => c.classList.remove("active"));
+    buttons.forEach(btn => btn.classList.remove("active"));
 
     // 클릭한 카드만 active 추가
-    card.classList.add("active");
+    button.classList.add("active");
     });
 });
 
 
-const tabMenu = document.querySelectorAll('.tab-menu div');
-const tabContent = document.querySelectorAll('#tab-content > div');
+const tabMenu = document.querySelectorAll('.tab-menu button');
+const tabContent = document.querySelectorAll('.tab-content > div');
 tabMenu.forEach(function(item, idx){
     item.addEventListener('click', function(e){
         e.preventDefault();
@@ -38,8 +37,8 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 
 async function bookData() {
     const params = new URLSearchParams({
-        target: "title",
-        query: "강아지"
+        target: "authors",
+        query: "Jeremy Silman"
     });
 
     try {
@@ -57,12 +56,15 @@ async function bookData() {
         const data = await response.json();
 
         // .box 요소 전체 선택
+
         const boxElements = document.querySelectorAll(".mySwiper10 .box");
 
         // documents 데이터를 각 box에 대응하여 렌더링
         for(let i=0; i<boxElements.length; i++){
             const doc = data.documents[i];
             const box = boxElements[i];
+
+
 
             // <img>
             const img = document.createElement("img");
@@ -71,7 +73,7 @@ async function bookData() {
 
             // <h3> 제목
             const h3 = document.createElement("h3");
-            h3.textContent = doc.title;
+            h3.textContent = doc.title.substring(0, 7)+"...";
             box.appendChild(h3);
 
             // <h6> 저자
@@ -81,7 +83,7 @@ async function bookData() {
 
             // <p> 내용 일부
             const p = document.createElement("p");
-            p.textContent = doc.contents.substring(0, 45)+"";
+            p.textContent = doc.contents.substring(0, 41)+"...";
             box.appendChild(p);
 
             const star = document.createElement("p");
@@ -103,8 +105,8 @@ async function bookData() {
         
 async function bookData2() {
     const params = new URLSearchParams({
-        target: "title",
-        query: "여행을 떠나요"
+        target: "authors",
+        query: "Mary Shelley"
     });
 
     try {
@@ -136,7 +138,7 @@ async function bookData2() {
 
             // <h3> 제목
             const h3 = document.createElement("h3")
-            h3.textContent = doc.title.substring(0, 8);
+            h3.textContent = doc.title.substring(0, 10);
             box.appendChild(h3);
 
             // <h6> 저자

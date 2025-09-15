@@ -158,13 +158,15 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 
 
 /* Most */
-.section {width: 1200px; height: 640px; display: flex; margin: 0 auto; justify-content: center; background-color: #b9ff23;}
-.sect-box {width: 1200px; height: 62px; background-color: aqua; display: flex; justify-content: space-between;}
+.section {width: 1200px; height: 640px; margin: 0 auto; margin-top: 20px;}
+.sect-box {width: 1200px; height: 60px; display: flex; justify-content: space-between;}
 .sect-box h2 {display: flex; align-items: center; margin-left: 10px; font-weight: 400;}
+.tab-content {width: 1200px; height: 580px; background-color: #0f75c3; display: flex; justify-content: center; align-items: center;}
+#tab1, #tab2 {display: flex; justify-content: center; align-items: center;}
 .sec1{width: 165px; height: 45px; margin: 10px 5px; font-size: 18px; border: none; background-color: #d2d2d2; color: rgb(0, 0, 0); cursor: pointer;}
 .active {background-color: #62ab00; color: white;}
-#tab-content > div{display: none;}
-#tab-content > div:first-child {display: block;}
+.tab-content > div{display: none;}
+.tab-content > div:first-child {display: block;}
 
 
 #books-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;}
