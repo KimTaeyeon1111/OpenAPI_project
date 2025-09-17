@@ -30,7 +30,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 
 async function bookData() {
     const params = new URLSearchParams({
-        query: "thrones"
+        query: "안녕"
     });
 
     try {
@@ -46,27 +46,28 @@ async function bookData() {
         }
 
     // 영어가 많이 있는 자료만 뽑아서 출력하기
-    const Maindata = await response.json();
+    /*
     const origin = Maindata.documents;
     function isMostlyEnglish(text, threshold = 0.7) {
         const englishChars = text.match(/[a-zA-Z]/g) || [];
         const totalChars = text.replace(/\s/g, '');
         return totalChars.length > 0 && (englishChars.length / totalChars.length) >= threshold;
 
-    }
+    } 
     const data = origin.filter((val)=>{
                     return val.contents && isMostlyEnglish(val.contents);
-    })
-
+    })*/
+        const data = await response.json();
         // .box 요소 전체 선택
-
-        const boxElements = document.querySelectorAll(".mySwiper .sub-book-box");
-
+        
+        const boxElements = document.querySelectorAll(".swiper-slide > div");
+        const boxtext = document.querySelectorAll(".sub-book-2 > div");
+        console.log(boxtext)
         // documents 데이터를 각 box에 대응하여 렌더링
         for(let i=0; i<boxElements.length; i++){
-            const doc = data[i];
+            const doc = data.documents[i];
             const box = boxElements[i];
-
+            const text = boxtext[i];
 
 
             // <img>
@@ -74,20 +75,10 @@ async function bookData() {
             img.src = doc.thumbnail;
             box.appendChild(img);
 
-            // <h3> 제목
-            const h3 = document.createElement("h3");
-            h3.textContent = doc.title.substring(0, 7)+"...";
-            box.appendChild(h3);
-
-            // <h6> 저자
-            const h6 = document.createElement("h6");
-            h6.textContent = doc.authors;
-            box.appendChild(h6);
-
-            // <p> 내용 일부
-            const p = document.createElement("p");
-            p.textContent = doc.contents.substring(0, 41)+"...";
-            box.appendChild(p);
+            // // <h3> 제목
+            //  const h3 = document.createElement("h3");
+            //  h3.textContent = doc.title
+            //  text.appendChild(h3);
 
             const star = document.createElement("p");
             const rating = Math.floor(Math.random() * 5) + 1;
@@ -96,7 +87,19 @@ async function bookData() {
             star.textContent = filledStars + emptyStars;
             star.style.color = "gold";
             star.style.fontSize = "1.2em";
-            box.appendChild(star);
+            text.appendChild(star);
+
+            // <h6> 저자
+            const h6 = document.createElement("h6");
+            h6.textContent = doc.authors;
+            text.appendChild(h6);
+
+            // <p> 내용 일부
+            const p = document.createElement("p");
+            p.textContent = doc.contents
+            text.appendChild(p);
+
+            
 
         };
 
@@ -104,3 +107,5 @@ async function bookData() {
         console.log('에러발생', error);
     }
 }
+
+bookData();

@@ -12,10 +12,10 @@ height: 100%;
 .swiper-slide {
 text-align: center;
 font-size: 18px;
-background: #444;
 display: flex;
 justify-content: center;
 align-items: center;
+border: 1px solid #444;
 }
 
 .swiper-slide img {
@@ -37,16 +37,17 @@ object-fit: cover;
 .sub-book-1 {position: relative; width: 600px; height: 915px;}
 .mySwiper2 {width: 600px; height: 565px; margin-bottom: 18px;}
 .mySwiper {width: 450px; height: 100px; position: relative; display: flex; justify-content: center; align-items: center;}
+.text-1 {background: none;}
 .mySwiper .swiper-slide {width: 400px; height: 100px; position: relative; display: flex; justify-content: center; align-items: center;}
 .sub-book-2 {width: 600px; height: 915px; background-color: aquamarine;}
-
+.mySwiper2 .swiper-slide {display: flex; justify-content: center; align-items: center; background: none;}
 .swiper-button-next3, .swiper-button-prev3 {width: 30px; height:30px; background: rgb(255, 255, 255);  border: none; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; cursor: pointer; top:620px;}
 .swiper-button-next3:hover, .swiper-button-prev3:hover {background-color: green; color: white; transition: all 0.4s;}
 
- .swiper-button-next3 {right: 30px;}
+.swiper-button-next3 {right: 30px;}
 .swiper-button-prev3 {left: 30px;} 
-.sub-book-box {width: 600px; height: 565px;}
-.sub-book-box img {}
+.mySwiper2 .sub-book-box1 img {width: 340px;}
+.mySwiper .sub-book-box1 img {width: 105px; height: 100px;}
 
 
 
