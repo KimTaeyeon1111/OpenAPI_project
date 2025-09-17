@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.content_middle {display: flex; align-items: center; justify-content: center;}
+
+/* slider */
+#slider {width: 100%; height: 600px;}
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #444;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+/* 첫 번째 박스 */
+.home-box {width: 100%; height: 90px; text-align: center; padding-top: 31px; background-color: rgba(75, 75, 75, 0.052); letter-spacing: 1px;}
+.home-box a:hover {color:rgb(255, 0, 0); transition: all 0.4s;}
+
+
+/* 장바구니 */
+.sub-book-all { width: 100%; height: 1111px; display: flex; justify-content: center; align-items: center;}
+.sub-book-first {width: 1200px; height: 915px; display: flex; justify-content: center; align-items: center;}
+.sub-book-1 {position: relative; width: 600px; height: 915px;}
+.mySwiper2 {width: 600px; height: 565px; margin-bottom: 18px;}
+.mySwiper {width: 450px; height: 100px; position: relative; display: flex; justify-content: center; align-items: center;}
+.mySwiper .swiper-slide {width: 400px; height: 100px; position: relative; display: flex; justify-content: center; align-items: center;}
+.sub-book-2 {width: 600px; height: 915px; background-color: aquamarine;}
+
+.swiper-button-next3, .swiper-button-prev3 {width: 30px; height:30px; background: rgb(255, 255, 255);  border: none; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; cursor: pointer; top:620px;}
+.swiper-button-next3:hover, .swiper-button-prev3:hover {background-color: green; color: white; transition: all 0.4s;}
+
+ .swiper-button-next3 {right: 30px;}
+.swiper-button-prev3 {left: 30px;} 
+.sub-book-box {width: 600px; height: 565px;}
+.sub-book-box img {}
+
+
+
+
+
+    
+
+

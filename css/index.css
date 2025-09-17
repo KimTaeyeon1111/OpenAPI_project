@@ -6,7 +6,7 @@
 #slider {width: 100%; height: 600px;}
 .swiper {
       width: 100%;
-      height: 100%
+      height: 100% 
 }
 
 .swiper-slide {
@@ -139,9 +139,6 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 
 
 
-
-
-
 /* 두 번째 슬라이드 */
 #slider2 {width: 100%; height: 510px;  background-color: #F4F8FB; margin-top: 21px; }
 .S_S_box {width: 635px; height: 510px; position: relative;}
@@ -158,15 +155,28 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 
 
 /* Most */
-.section {width: 1200px; height: 640px; margin: 0 auto; margin-top: 20px;}
+.section {width: 1200px; height: 570px; margin: 0 auto; margin-top: 50px;}
 .sect-box {width: 1200px; height: 60px; display: flex; justify-content: space-between;}
 .sect-box h2 {display: flex; align-items: center; margin-left: 10px; font-weight: 400;}
-.tab-content {width: 1200px; height: 580px; background-color: #0f75c3; display: flex; justify-content: center; align-items: center;}
-#tab1, #tab2 {display: flex; justify-content: center; align-items: center;}
+.tab-content {width: 1200px; height: 580px; background-color: 1#959595; }
 .sec1{width: 165px; height: 45px; margin: 10px 5px; font-size: 18px; border: none; background-color: #d2d2d2; color: rgb(0, 0, 0); cursor: pointer;}
 .active {background-color: #62ab00; color: white;}
 .tab-content > div{display: none;}
 .tab-content > div:first-child {display: block;}
+
+#tab1 {width: 1200px; height: 580px; }
+#tab2 {width: 1200px; height: 580px; }
+#tab1 div {float: left;}
+#tab2 div {float: left;}
+.tab-box {height: 385px; margin-right: 59px; margin-top: 30px; border-radius: 4px; border: 1px solid #00000018; cursor: pointer; text-align: center; }
+.tab-box:hover {box-shadow: 3px 3px 6px #44444447;}
+.tab-box:last-child {margin-right: 0;}
+.tab-box:first-child {margin-left: 10px;}
+.tab-box img {width: 140px; height: 220px; margin-top: 10px; margin-bottom: 10px; box-shadow: 3px 3px 6px #000000c3;}
+.tab-box h3 {width: 250px; }
+.tab-box h6 {width: 250px; }
+.tab-box p {width: 250px; }
+
 
 
 #books-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;}
@@ -177,7 +187,7 @@ animation : @keyframes를 정의해 시간 마다의 변화값을 세밀하게 �
 
 
 /* Start a new series */
-.start_a_new1 {width: 100%; height: 650px; background-image: url( "../img/time_back.jpg");}
+.start_a_new1 { width: 100%; height: 650px; background-image: url( "../img/time_back.jpg");}
 .start1 {width: 100%; height: 650px; background-color: rgba(19, 23, 44, 0.864); display: flex; justify-content: center; align-items: center;}
 .start2 {width: 1200px; height: 650px; display: flex;}
 .start2-1 {width: 700px; height: 650px; color: white; display: flex; justify-content: center; flex-direction: column;}

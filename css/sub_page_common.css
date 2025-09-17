@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #333;}
+
+body {font-family: "Inter", sans-serif;}
+
+/* header */
+header {width: 100%; height: 120px;}
+
+.container {width: 100%; height: 70x; margin: 0 auto;}
+.header_top {width: 1200px; height: 90px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+
+
+.logo {width: 180px; height: 50px;}
+
+
+.search {width: 590px; height: 60px; display: flex; margin-top: 5px;}
+.search input{outline: none; width: 470px; height: 52px; padding-left: 30px; border-radius: 7px 0 0 7px; color:rgba(0, 0, 0, 0.8); border: 1px solid rgba(0, 0, 0, 0.5);}
+.search button { width: 100px; height:52px; background-color:rgb(15, 159, 15); border: none; border-radius: 0 7px 7px 0; display: flex;
+align-items: center; justify-content: center; cursor: pointer;}
+.search button:hover {background-color: #000000; transition: all 0.6s;}
+.search button i {color: white;}
+
+
+.mypage {width: 158px; height: 37px; margin: 0 10px; font-weight:450;}
+.icon-cart {color: green; margin-top: 7px; font-size: x-large;}
+.icon-setting {margin-left: 10px; color: black;}
+.icon-setting:hover {transition: all 0.1s; color:green;}
+
+
+/* nav 바 */
+nav {width: 100%; height: 60px; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.nav-start {display: flex;}
+.nav-second {position: relative;}
+.nav-second a {display: block; padding: 14px 25px;}
+.nav-second a:hover, .nav-second-2 a:hover {color: #49af05; transition: all 0.4s;}
+
+.nav-second-1 {display: none; position: absolute; top: 100%; left: 0; background: white; box-shadow: 0 3px 10px #4e4e4e; min-width: 150px; font-size: 15px; z-index: 10;}
+
+.nav-second:hover > .nav-second-1 {display: block;}
+.nav-second-div {display: none; position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 3px 10px #4e4e4e; padding: 20px; gap: 40px; z-index: 10; flex-direction: row;}
+.nav-second:hover .nav-second-div {display: flex; left: -150px;}
+
+.nav-second-div .nav-second-1 {position: static; display: block; min-width: 180px; box-shadow: none;}
+.sebmenu-1 .nav-second-2 a {display: block; padding-left: 0; color: #272727; font-size: 13px;}
+/* position: static - 설정된 position 없애기 */
+.sebmenu-1 .nav-second-2 a:hover {color: #49af05;}
+.books-first-li {font-weight: 500; font-size: 17px; padding-bottom: 15px; border-bottom: 2.5px solid #0000002f;}
+
+
+
+
+/* footer */
+footer {width: 100%; height: 60px; border-top:#4e4e4e;}
+
+.footer1 {display: flex; justify-content: center; align-items: center;}
+.footer-first {width: 1200px; height: 365px; display: flex; justify-content: center; align-items: center;}
+.f-first {width: 600px; height: 260px;}
+.f-first img{margin-bottom: 40px; width: 190px; height: 55px; cursor: pointer;}
+.f-first p {font-size: 14px;}
+.f-text1 {display: flex; align-items: center; padding: 30px 0;}
+.f-text1 input {outline: none; width: 270px; height:52px; border:1px solid #000000; cursor:text; padding-left: 25px; font-size: medium; border-right: none;}
+.f-text1 button {width: 52px; height: 52px;; background: #000000;  cursor: pointer;}
+.f-text1 button:hover {background-color: rgb(15, 159, 15); border: none; transition: all 0.3s;}
+.f-text1 button i {color:white; font-size: 30px; cursor: pointer;}
+
+
+.f-second {width: 100%; height: 260px; display: flex; justify-content: space-between;}
+.f-text {flex-direction: column;}
+.A-1 li:hover{color:rgb(15, 159, 15); transition: all 0.3s; cursor: pointer;}
+
+.f-text h4 {font-size: 25px; font-weight: 500; padding-bottom: 15px;}
+.f-text ul {font-size: 20px; }
+.f-text ul li {margin-bottom: 20px;}
+.f-t-2-3 {display: flex;}
+.f-text span:hover, .A-2-1:hover {color: rgb(15, 159, 15); cursor: pointer; transition: all 0.3s;}
+
+
+.container2 {width: 1200px; height: 60px; margin: 0 auto; display: flex; justify-content: space-between;}
+.container2 p, .foot1 a {color: rgba(0, 0, 0, 0.5); font-size: small;}
+.foot1 {padding-top: 17px; word-spacing: 5px;}
+.foot1 a:hover {color: rgb(32, 167, 32);}
+.foot2 {margin-top: 17px;}
+.container2 img {height: 30px; margin-top:11px;}
+
+
+
+
+/* 맨 위로 가기 버튼(지피티 참고) */
+.back-to-top {width: 50px; height: 50px; background: #49af05;  display: none; position: fixed; border-radius: 50%; bottom: 30px;
+right: 30px; color: #fff; padding: 12px 17px; cursor: pointer; z-index: 1000; font-weight: bolder;}
+/* display:none 처음에 안 보이게, position:fixed 위치 고정 */
+
+.back-to-top.visible {display: block; opacity: 1;}
