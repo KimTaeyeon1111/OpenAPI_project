@@ -44,12 +44,14 @@ object-fit: cover;
 .swiper-button-next3, .swiper-button-prev3 {width: 30px; height:30px; background: rgb(255, 255, 255);  border: none; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; cursor: pointer; top:620px;}
 .swiper-button-next3:hover, .swiper-button-prev3:hover {background-color: green; color: white; transition: all 0.4s;}
 
+
 .swiper-button-next3 {right: 30px;}
 .swiper-button-prev3 {left: 30px;} 
 .mySwiper2 .sub-book-box1 img {width: 340px;}
 .mySwiper .sub-book-box1 img {width: 105px; height: 100px;}
 
-
+.boxtext {display: none;}
+.boxtext:first-child{display: block;}
 
 
 

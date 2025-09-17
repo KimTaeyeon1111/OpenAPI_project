@@ -60,13 +60,15 @@ async function bookData() {
         const data = await response.json();
         // .box 요소 전체 선택
         
-        const boxElements = document.querySelectorAll(".swiper-slide > div");
+        const boxElements = document.querySelectorAll(".mySwiper .swiper-slide >div");
+        const boxElements2 = document.querySelectorAll(".mySwiper2 .swiper-slide>div");
         const boxtext = document.querySelectorAll(".sub-book-2 > div");
         console.log(boxtext)
         // documents 데이터를 각 box에 대응하여 렌더링
         for(let i=0; i<boxElements.length; i++){
             const doc = data.documents[i];
             const box = boxElements[i];
+            const box2 = boxElements2[i];
             const text = boxtext[i];
 
 
@@ -75,10 +77,14 @@ async function bookData() {
             img.src = doc.thumbnail;
             box.appendChild(img);
 
-            // // <h3> 제목
-            //  const h3 = document.createElement("h3");
-            //  h3.textContent = doc.title
-            //  text.appendChild(h3);
+            const img2= document.createElement("img");
+            img2.src = doc.thumbnail;
+            box2.appendChild(img2);
+
+            // <h3> 제목
+            const h3 = document.createElement("h3");
+            h3.textContent = doc.title
+            text.appendChild(h3);
 
             const star = document.createElement("p");
             const rating = Math.floor(Math.random() * 5) + 1;
