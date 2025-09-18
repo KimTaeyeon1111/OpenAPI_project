@@ -214,10 +214,6 @@ align-items: center; position: absolute; top: 50%; transform: translateY(-50%); 
 
 
 
-/* Limmited Time offer 슬라이드 */
-
-
-
 
 /* person 슬라이드 */
 .person {width: 100%; height: 650px; background-image: url("../img/swiper_back3.jpg"); } 

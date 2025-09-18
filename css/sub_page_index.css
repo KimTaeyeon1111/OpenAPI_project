@@ -15,7 +15,6 @@ font-size: 18px;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 1px solid #444;
 }
 
 .swiper-slide img {
@@ -40,18 +39,25 @@ object-fit: cover;
 .text-1 {background: none;}
 .mySwiper .swiper-slide {width: 400px; height: 100px; position: relative; display: flex; justify-content: center; align-items: center;}
 .sub-book-2 {width: 600px; height: 915px; background-color: aquamarine;}
-.mySwiper2 .swiper-slide {display: flex; justify-content: center; align-items: center; background: none;}
-.swiper-button-next3, .swiper-button-prev3 {width: 30px; height:30px; background: rgb(255, 255, 255);  border: none; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; cursor: pointer; top:620px;}
-.swiper-button-next3:hover, .swiper-button-prev3:hover {background-color: green; color: white; transition: all 0.4s;}
-
-
+.mySwiper2 .swiper-slide {display: flex; justify-content: center; align-items: center; background: none; border: 1px solid #4444442d;}
+.swiper-button-next3, .swiper-button-prev3 {width: 30px; height:30px; background: rgb(255, 255, 255);  border: 1px solid #44444440; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; cursor: pointer; top:620px;}
+.swiper-button-next3:hover, .swiper-button-prev3:hover {background-color: #25a925; color: white; transition: all 0.4s;}
+.active {border: 1px solid #00000046;}
+.text-1, .sub-book-box1 {cursor: pointer;}
 .swiper-button-next3 {right: 30px;}
 .swiper-button-prev3 {left: 30px;} 
-.mySwiper2 .sub-book-box1 img {width: 340px;}
-.mySwiper .sub-book-box1 img {width: 105px; height: 100px;}
+
+.mySwiper .sub-book-box1 img {width: 50px; height: 77px; border: none; box-shadow: 3px 4px 4px #444;}
+.sub-book-box img {width: 350px; box-shadow: 4px 8px 8px #444;}
+
+.tab-content {margin: 0 10px;}
+.tab-content h3, .tab-content h6 {font-size: 30px; font-weight: 400; padding-bottom: 10px;}
+.tab-content 
 
 .boxtext {display: none;}
 .boxtext:first-child{display: block;}
+
+
 
 
 
