@@ -59,7 +59,7 @@ color, opacity, width, transform 등의 속성을 넣을 수 있음. */
 /* ease-in-out : timing-function(시간 함수) 중 하나로 애니메이션이 진행되는 가속,감속 패턴 정하기
 linear 같은 속도, ease-in 점점 가속, ease-out 점점 감속, ease-in-out 가속+감속+가속
 = 내부적으로는 cubic-bezier(0.42, 0, 0.58, 1)-베지어 곡선 으로 정의되어 있음. */
-.icon:hover img{animation: move-scale 0.3s ease-in-out 1; transform-origin: centet centet;}
+.icon:hover img{animation: move-scale 0.3s ease-in-out 1; transform-origin: center center;}
 /* transform-origin : <x> <y> <z?> => 가운데 축으로 회전/왜곡을 하겠다는 뜻.*/
 /* name(@keyframes 작성 시 필요한 이름), duraton(사이클 재생 시간), timing-function(타이밍, 이징), iteration-count(반복/재생 횟수)  */
 
